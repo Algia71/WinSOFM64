@@ -1,0 +1,242 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "windows.h"
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+WINSOFMICON             ICON                    "winsofm.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+KOHONENBMP              BITMAP                  "kohonen.bmp"
+GRIGLIABMP              BITMAP                  "griglia.bmp"
+FOGLIOBMP               BITMAP                  "foglio.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+WINSOFMMENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Esci\tAlt+F4",               IDM_ESCI
+        MENUITEM SEPARATOR
+        MENUITEM "&Informazioni...",            IDM_INFORMAZIONI
+    END
+    POPUP "&Opzioni"
+    BEGIN
+        MENUITEM "&Parametri...\tCtrl+P",       IDM_PARAMETRI
+        MENUITEM "Rete &neurale...\tCtrl+N",    IDM_RETENEURONALE
+        MENUITEM SEPARATOR
+        MENUITEM "&Salva impostazioni in uscita", IDM_SALVAIMPOSTAZIONI
+    END
+    POPUP "&Comandi"
+    BEGIN
+        MENUITEM "&Vai\tF5",                    IDM_VAI
+        MENUITEM SEPARATOR
+        MENUITEM "Pa&sso\tF8",                  IDM_PASSO
+        MENUITEM "&Pausa\tF3",                  IDM_PAUSA
+        MENUITEM "&Continua\tCtrl+F3",          IDM_CONTINUA
+        MENUITEM SEPARATOR
+        MENUITEM "&Ripristina\tShift+F10",      IDM_RIPRISTINA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+WINSOFMACC ACCELERATORS
+BEGIN
+    "^P",           IDM_PARAMETRI,          ASCII   
+    "^N",           IDM_RETENEURONALE,      ASCII   
+    VK_F5,          IDM_VAI,                VIRTKEY 
+    VK_F8,          IDM_PASSO,              VIRTKEY 
+    VK_F3,          IDM_PAUSA,              VIRTKEY 
+    VK_F3,          IDM_CONTINUA,           VIRTKEY, CONTROL
+    VK_F10,         IDM_RIPRISTINA,         VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+INFORMAZIONIDLG DIALOGEX 73, 55, 223, 104
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Informazioni"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+    ICON            "WinsofmIcon",-1,58,6,21,20
+    LTEXT           "WinSOFM - Versione 1.1",-1,83,13,84,8
+    CTEXT           "Copyright© 1995-1996 Francesco Bellifemine, Donato Dalbis, Alessandro Giancane",-1,0,31,223,19
+    CTEXT           "Applicazione della quantizzazione vettoriale operata dalla SOFM di Kohonen sulla distribuzione omogenea di punti nel piano.",-1,0,54,223,26
+    DEFPUSHBUTTON   "&Ok",IDOK,85,85,50,14
+END
+
+PARAMETRIDLG DIALOGEX 99, 49, 217, 84
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Parametri"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+    LTEXT           "Cicli totali (1-5000000):",-1,6,6,79,8
+    EDITTEXT        101,84,4,33,12,ES_UPPERCASE
+    GROUPBOX        "",-1,6,17,145,37
+    CONTROL         "Disegna mappa",105,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,14,25,66,10
+    LTEXT           "ogni (1-1000)",106,15,39,47,8
+    EDITTEXT        107,62,37,33,12,ES_UPPERCASE
+    LTEXT           "cicli",108,99,39,18,8
+    CONTROL         "Inizializza i pesi a valori medi",109,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,57,111,10
+    CONTROL         "Mostra quantizzazione ideale",110,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,69,111,10
+    DEFPUSHBUTTON   "&Ok",IDOK,159,7,50,14
+    PUSHBUTTON      "&Annulla",IDCANCEL,159,25,50,14
+END
+
+RETENEURONALEDLG DIALOGEX 45, 14, 311, 231
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Rete neurale"
+FONT 8, "Helv", 0, 0, 0x0
+BEGIN
+    LTEXT           "Inserire i valori desiderati per i seguenti parametri:",-1,6,196,180,8
+    LTEXT           "A:",-1,6,216,8,8
+    EDITTEXT        101,14,215,28,12,ES_AUTOHSCROLL
+    LTEXT           "K:",-1,50,216,8,8
+    EDITTEXT        102,58,215,28,12,ES_AUTOHSCROLL
+    LTEXT           "B:",-1,94,216,8,8
+    EDITTEXT        103,102,215,28,12,ES_AUTOHSCROLL
+    LTEXT           "H:",-1,138,216,8,8
+    EDITTEXT        104,146,215,28,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Ok",IDOK,191,204,61,23
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "INFORMAZIONIDLG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 160
+    END
+
+    "PARAMETRIDLG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 181
+    END
+
+    "RETENEURONALEDLG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 258
+        BOTTOMMARGIN, 227
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDM_ESCI                "Esci dal programma WinSOFM"
+    IDM_INFORMAZIONI        "Informazioni circa il programma"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PARAMETRI           "Imposta i parametri di funzionamento del programma"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_RETENEURONALE       "Imposta i valori delle variabili nelle formule di decrescenza"
+    IDM_SALVAIMPOSTAZIONI   "Salva le impostazioni di tutti i parametri all'uscita dal programma"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_VAI                 "Inizia l'apprendimento della rete neurale"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PASSO               "Esegue un passo di apprendimento della rete neurale"
+    IDM_PAUSA               "Interrompe momentaneamente l'apprendimento della rete neurale"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_CONTINUA            "Continua l'apprendimento precedentemente interrotto della rete neurale"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_RIPRISTINA          "Re-inizializza la matrice dei pesi della rete neurale e tutti i parametri di funzionamento"
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
