@@ -1,8 +1,8 @@
 # WinSOFM64
 
-Applicazione della quantizzazione vettoriale operata dalla [Self Organizing Features Map (SOFM) di Kohonen](/doc/1990-Kohonen-PIEEE.pdf) alla distribuzione omogenea di punti nel piano.
+Applicazione della quantizzazione vettoriale operata dalla [Self Organizing Features Map (SOFM) di Kohonen](/doc/1990-Kohonen-PIEEE.pdf) alla distribuzione omogenea di punti nel piano. Il programma è stato realizzato nell'ambito del corso di Cibernetica, Laurea in Scienze dell'Informazione dell'Università di Bari, Italia.
 
-_Application of vector quantization performed by Kohonen's Self Organizing Features Map (SOFM) to the homogeneous distribution of points in the plane._
+_Application of vector quantization performed by Kohonen's Self Organizing Features Map (SOFM) to the homogeneous distribution of points in the plane. The program was developed as part of the Cybernetics course, Degree in Information Science at the University of Bari, Italy._
 
 
 ## Alcuni screenshot
