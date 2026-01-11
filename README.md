@@ -14,9 +14,9 @@ _Some screenshots. Here are some screenshots taken during different stages of us
 
 ### Avvio del programma
 
-All'avvio, il programma presenta graficamente lo stato della rete di Kohonen, coi pesi inizializzati a valori di partenza.
+All'avvio, il programma presenta graficamente lo stato della mappa di Kohonen, coi pesi inizializzati a valori di partenza.
 
-_Starting the program. At startup, the program graphically presents the state of the Kohonen network, with the weights initialized to starting values._
+_Starting the program. At startup, the program graphically presents the state of the Kohonen map, with the weights initialized to starting values._
 
 ![Avvio dell'applicazione](/img/winsofm-1.png)
 
@@ -41,9 +41,9 @@ _Specific parameters of the Kohonen algorithm. Then there is a second level of c
 
 ### Fine della simulazione
 
-Alla fine della simulazione, il programma presenta lo stato finale dei pesi della rete di Kohonen.
+Alla fine della simulazione, il programma presenta lo stato finale dei pesi della mappa di Kohonen.
 
-_End of simulation. At the end of the simulation, the program presents the final state of the Kohonen network weights._
+_End of simulation. At the end of the simulation, the program presents the final state of the Kohonen map weights._
 
 ![Fine della simulazione](/img/winsofm-4.png)
 
